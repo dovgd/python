@@ -4,7 +4,7 @@ MAINTAINER Dovgopoliy Denis
 
 LABEL Description="docker image python"
 
-RUN apt update && apt install python -y && apt install python3-pip -y && pip3 install websockets
+RUN apt update && apt install python -y && apt install python3-pip -y && pip3 install websockets && pip3 install websocket
 
 COPY ./server.py /srv
 
